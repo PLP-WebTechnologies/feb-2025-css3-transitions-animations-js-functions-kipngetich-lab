@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Animations & localStorage Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CSS Animations & localStorage Assignment</h1>
+
+        <!-- Section for CSS Animation triggered by JavaScript -->
+        <section class="animation-zone">
+            <h2>CSS Animation Triggered by JavaScript</h2>
+            <div class="animated-element" id="myAnimatedElement">Animate Me!</div>
+            <button id="triggerAnimationButton">Trigger Animation</button>
+        </section>
+
+        <!-- Section for localStorage User Preferences -->
+        <section class="preferences-zone">
+            <h2>User Preferences (Stored in localStorage)</h2>
+            <div class="preference-item">
+                <label for="usernameInput">Username:</label>
+                <input type="text" id="usernameInput" placeholder="Enter your name">
+            </div>
+            <div class="preference-item">
+                <label for="boxColorInput">Box Color:</label>
+                <input type="color" id="boxColorInput" value="#3498db"> <!-- Default color -->
+            </div>
+            <div class="preference-item">
+                <label for="themeSelector">Page Theme:</label>
+                <select id="themeSelector">
+                    <option value="light">Light Theme</option>
+                    <option value="dark">Dark Theme</option>
+                </select>
+            </div>
+            <button id="savePreferencesButton">Save Preferences</button>
+            <button id="applyPrefsBtn">Apply Saved Preferences</button>
+            <p>Current Username: <strong id="displayUsername">N/A</strong></p>
+            <div id="feedback"></div>
+        </section>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
